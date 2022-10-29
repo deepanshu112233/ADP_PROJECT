@@ -3,7 +3,9 @@
     padding: 0px;
     /* font-family: 'Acme', sans-serif; */
 }
-
+html{
+  scroll-behavior: smooth;
+}
 #navbar{
     display: flex;
     align-items: center;
@@ -89,8 +91,9 @@
     color: white;
 }
 #btn:hover{
-    color: yellow;
-    cursor: pointer;
+  background-color: rgb(31, 89, 124);
+  cursor: pointer;
+  border: 2px solid rgb(31, 89, 124);
 }
 
 /*//////////////////////////  */
@@ -121,9 +124,6 @@
     justify-content: center;
 }
 
-#btn:hover{
-  background-color: #fff;
-}
 .container-2{
     display: grid;
     /* background-color: green; */
