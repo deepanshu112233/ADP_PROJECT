@@ -6,6 +6,9 @@
 html{
   scroll-behavior: smooth;
 }
+/* body{
+  background-color: rgb(10, 3, 23);
+} */
 #navbar{
     display: flex;
     align-items: center;
@@ -13,6 +16,24 @@ html{
     top: 2px;
     z-index: 1000;
 }
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+
+  text-decoration: none;
+}
+a:hover{
+
+   text-decoration: none; 
+
+}
+a:active  {
+
+  text-decoration: none; 
+}
+
 .navbar ul{
     display: flex;
     list-style: none;
