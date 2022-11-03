@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Ubuntu', sans-serif;   
+  font-weight: lighter;
     /* font-family: 'Acme', sans-serif; */
 }
 html{
@@ -9,11 +13,16 @@ html{
 /* body{
   background-color: rgb(10, 3, 23);
 } */
+body{
+  /* background-image: linear-gradient(180deg,#233242,rgb(0, 4, 7)); */
+  font-family: 'Ubuntu', sans-serif;  
+
+}
 #navbar{
     display: flex;
     align-items: center;
     position: sticky;  /*grey strip position corrected*/
-    top: 2px;
+    top: 0px;
     z-index: 1000;
 }
 a:link{
@@ -55,7 +64,7 @@ a:active  {
     text-decoration: none;
     margin: 10px;
     padding: 5px;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;   
     font-weight: bold;
     font-size: 1.4rem;
     
@@ -123,44 +132,49 @@ a:active  {
 
 .fullbody{
     display: grid;
-    border: 2px solid red;
+
+    /* border: 2px solid red; */
+    
     text-align: center;
     justify-content: center;
     padding-bottom: 50px;
 }
 
+body{
+  background-color: #233242;
 
+}
 /*                                        */
 .container-1{
     
     display: grid;
-    border: 4px solid blue;
+
+    border: 4px solid rgb(54, 54, 54);
+    
     height: 700px;
     width: 1490px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
          /*content: ""; Very Important line*/
     background: url('images/pexels-ray-01.jpg') no-repeat center center/cover ; 
     text-align: center;
     justify-content: center;
 }
 
+
 .container-2{
     display: grid;
     /* background-color: green; */
-    border: 4px solid green;
+    /* border: 4px solid green; */
     /* grid-template-columns: 4fr 4fr 4fr 4fr; */
     padding: 4px;
     height: 540px;
-    margin-top: 10px;
-    
-
-    margin-bottom: 10px;
+    background-color: #233242;
 }
 .box{
     /* z-index: -1; */
 
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     margin: 20px;
 }
 
@@ -212,7 +226,7 @@ a:active  {
 
 
 .main_front{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-size: 3rem;
     color: white;
     display: block;
@@ -225,8 +239,8 @@ a:active  {
 /* Google Fonts - Poppins */
 .slide-container{
   height: 500px;
-  border: 2px solid purple;
-  background-color: rgb(203, 200, 200);
+  /* border: 2px solid purple; */
+  /* background-color: rgb(203, 200, 200); */
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
@@ -243,8 +257,8 @@ a:active  {
 }
 .image-content,
 .card-content{
-  border: 2px solid green;
-  background-color: yellow;
+  /* border: 2px solid green; */
+  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,16 +326,20 @@ a:active  {
 .button{
   border: none;
   font-size: 16px;
-  color: white;
   padding: 8px 16px;
   background-color: #6789e8;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  text-decoration: none;
+
 }
 .button:hover{
-  background: #2f54ba;
+  background: #446fe4;
+}
+.button:visited{
+  color:white;
 }
 
 .swiper-navBtn{
@@ -368,7 +386,7 @@ a:active  {
   
   /* height: 100vh; */
   /* background-color: green; */
-  border: 10px solid green;
+  border: 5px solid rgb(91, 89, 89);
   grid-template-columns: 1fr;
   padding: 4px;
   height: 400px;
@@ -378,13 +396,16 @@ a:active  {
 }
 
 /*ABOUT US PAGE*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
 
 .container-3{
-  font-family: "Poppins" , sans-serif;
+  /* font-family: "Poppins" , sans-serif; */
+  font-family: 'Ubuntu', sans-serif;   
+
   display: grid;
   margin:auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   /* justify-content: center; */
   /* text-align: center; */
   width: 50%;
@@ -479,6 +500,7 @@ a:active  {
   color: #fff;
   font-size: 18px;
   outline: none;
+  margin-right: 400px;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
@@ -533,4 +555,19 @@ a:active  {
   color: white;
 }
 
-/*ABOUT US PAGE*/
+/*FOOTER*/
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
