@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     /* font-family: 'Acme', sans-serif; */
+    font-family: 'ubuntu',sans-serif;
+    font-weight: lighter;
+}
+body{
+  background: url("fullbg0.jpg") no-repeat center center/cover ;
+  background-color: rgb(16, 17, 21);
+
 }
 html{
   scroll-behavior: smooth;
@@ -12,7 +21,7 @@ html{
     display: flex;
     align-items: center;
     position: sticky;  /*grey strip position corrected*/
-    top: 2px;
+    top: 0px;
     z-index: 1000;
 }
 .navbar ul{
@@ -26,7 +35,7 @@ html{
     content: "";
     background-color: rgb(54, 169, 184);
     position: absolute;
-    height: 60px;
+    height: 65px;
     width: 100%;
     z-index: -1; /*item upper aa jaege*/
     /* opacity: 05; */
@@ -57,26 +66,29 @@ html{
     
 }
 
+
 .main{
-    background-color: rgb(16, 17, 21);
+    /* background-color: rgb(16, 17, 21); */
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 4px;
     display: grid;
-    border: 2px solid red;
+
+    /* border: 2px solid red; */
+
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(2,1fr);
-    row-gap: 8px;
+    /* row-gap: 2px; */
     /* column-gap: 8px; */
     height: 1400px;
     
 }
 .top1{
+    background: url('z3.jpg') no-repeat center center/cover;
+    /* background-color:white; */
+   height: 350px;
+    /* border: 2px solid green; */
     
-    background-color: rgb(16, 17, 21);
-    margin: 4px;
-    border: 2px solid green;
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
@@ -85,12 +97,13 @@ html{
 }
 .boxes{
 padding: 4px;
-    background-color: rgb(16, 17, 21);
+    /* background-color: rgb(16, 17, 21); */
 
     font-size: 1.2rem   ;
     color: white;
     margin: 4px;
-border: 2px solid green;
+
+/* border: 2px solid green; */
 }
 .boxes h2{
     margin-bottom: 8px;
@@ -99,12 +112,22 @@ border: 2px solid green;
     grid-column-start: 1;
     grid-column-end: 5;
 }
-
+#left{
+  background: url('z2.jpg') no-repeat center center/cover;
+}
+#left img{
+  opacity: 0;
+}
 .below{
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
+    
+    /* border: 2px solid white; */
     display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,0.4fr);
     
 }
+
 .boxes input{
     font-size: 1.2rem;
     margin: 10px;
@@ -132,7 +155,7 @@ border: 2px solid green;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 #lefitem_heading{
   display: grid;
@@ -141,24 +164,27 @@ border: 2px solid green;
 }
 
 #right{
-    background-color:#010e1b;
+    background: url('z1.jpg') no-repeat center center/cover;
     color: rgb(187, 185, 185);
     font-size: 4rem;
+    justify-content: center;
+    text-align: center;
+    
     
     
 }
 
 #right p{
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 20px;
 }
-#left{
+/* #left{
+  border: 2px solid white;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    background-color:#010e1b;
+    grid-template-rows: repeat(3,1fr);
 
-}
+} */
 
 #fullname{
   display: grid;
@@ -171,34 +197,66 @@ border: 2px solid green;
   grid-column-start: 3;
   grid-column-end: 5;
 }
-.leftbutton button{
-  background-color: #dc9300;
-  color: white;
-  font-size: 1.2rem;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 10px;
-  height: 40px;
-  display: grid;
+.leftbutton{
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 120px;
+}
+.leftbutton input{
+  border: 2px solid #d7910e;
+  background-color: #d7910e;
+  color: white;
+  font-size: 2rem;
+  border-radius: 12px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+  
  
 }
 
-.leftbutton button:hover{
+.leftbutton input:hover{
   cursor: pointer;
- background: #d0710b;
+  border: 2px solid #dc7608;
+ background: #dc7608;
  
  
 }
-
+.form-text{
+  margin-bottom: -40px;
+}
 .leftitem{
+  
+  color: #d7910e;
+  font-size: 1.4rem;
   display: grid;
-  border: 2px solid white;
-  margin:2px
+  padding: 4px;
+  /* border: 2px solid yellow; */
+  /* margin:2px */
 
 }
-input:focus{
+input{
+  height: 36px;
+  outline: none;
+}
+input::placeholder{
+  font-size: 1.2rem;
+  text-align: center;
+}
+input, select {
+  
+  font-size: 14px;
+}
+
+.lefinput:focus{
 outline: none;  
 
 }
@@ -214,32 +272,29 @@ outline: none;
 .container-2{
     display: grid;
     /* background-color: green; */
-    border: 4px solid green;
-    background-color: rgb(16, 17, 21);
-
+    /* border: 4px solid green; */
+    /* background-color: rgb(16, 17, 21); */
+  
     /* grid-template-columns: 4fr 4fr 4fr 4fr; */
+    /* border-bottom: 2px solid white; */
     padding: 4px;
-    height: 540px;
-    margin-top: 10px;
+    height: 520px;
     margin-bottom: 10px;
 }
-.box{
-    /* z-index: -1; */
 
-    border: 2px solid purple;
-    margin: 20px;
-}
 
 /* Google Fonts - Poppins */
 .slide-container{
   height: 500px;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   /* background-color: rgb(203, 200, 200);
    */
-  background-color: rgb(16, 17, 21);
+  /* background-color: rgb(16, 17, 21); */
   max-width: 4020px;
+  
   width: 1300px;
   padding: 40px 0;
+  
 }
 .slide-content{
   margin: 0 40px;
@@ -248,14 +303,14 @@ outline: none;
 }
 .card{
   /* border-radius: 25px; */
-  margin-top: 50px;
-  background-color: #FFF;
+  margin-top: 40px;
+  /* background-color: #FFF; */
 }
 .image-content,
 .card-content{
-height: 320px;
-  border: 2px solid green;
-  background-color: yellow;
+ height: 320px;
+  /* border: 2px solid green;
+  background-color: yellow; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,8 +320,9 @@ height: 320px;
 }
 .image-content{
   position: relative;
-  row-gap: 5px;
+  /* row-gap: 1px; */
   padding: 25px 0;
+  
 
 }
 .overlay{
@@ -295,7 +351,7 @@ height: 320px;
   position: relative;
   height: 150px;
   width: 150px;
-  background: #FFF;
+  /* background: #FFF; */
   padding: 3px;
     /* z-index: -1; */
 
@@ -303,12 +359,12 @@ height: 320px;
 .card-image .card-img{
   background:no-repeat center/cover;
   height: 300px;
-  width: 300px;
+  width: 350px;
   margin-left: -80px;
   object-fit:contain;
     /* z-index: -1; */
   
-  border: 4px solid #4070F4;
+  /* border: 4px solid #4070F4; */
 }
 
 
