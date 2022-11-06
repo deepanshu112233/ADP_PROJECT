@@ -3,11 +3,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* font-family: 'Acme', sans-serif; */
-    font-family: 'ubuntu',sans-serif;
+    /* font-family: 'Acme', sans-serif;
+    font-weight: lighter; */
+    /* font-family: 'ubuntu',sans-serif; */
+    
 }
 body{
-  /* background: url("bg1.jpg") no-repeat center center/cover; */
+  /* background: url("fullbg.png") no-repeat center center/cover ; */
   background-color: rgb(16, 17, 21);
 
 }
@@ -17,6 +19,8 @@ html{
 /* background-color: rgb(16, 17, 21); */
 
 #navbar{
+  font-family: 'Ubuntu', sans-serif;
+    
     display: flex;
     align-items: center;
     position: sticky;  /*grey strip position corrected*/
@@ -65,6 +69,7 @@ html{
     
 }
 
+
 .main{
     /* background-color: rgb(16, 17, 21); */
     color: white;
@@ -82,10 +87,10 @@ html{
     
 }
 .top1{
+  font-family: 'ubuntu', sans-serif;
     background: url('z3.jpg') no-repeat center center/cover;
     /* background-color:white; */
-    margin: 4px;
-  height: 350px;
+   height: 386px;
     /* border: 2px solid green; */
     
     grid-column-start: 1;
@@ -112,22 +117,24 @@ padding: 4px;
     grid-column-end: 5;
 }
 #left{
+  
   background: url('z2.jpg') no-repeat center center/cover;
 }
 #left img{
   opacity: 0;
 }
 .below{
-    /* border: 4px solid blue; */
-    
-    border: 2px solid white;
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,0.4fr);
+    height: 500px;
     
 }
 
 .boxes input{
+  
     font-size: 1.2rem;
     margin: 10px;
     height: 20px;
@@ -135,6 +142,8 @@ padding: 4px;
     background-color: rgb(49, 51, 61);
 }
 .boxes button{
+  
+  
     font-size: 1.2rem;
     color: white;
     height: 30px;
@@ -151,6 +160,10 @@ padding: 4px;
 }
 
 .gallery{
+  /* border: 2px solid yellow; */
+  font-family: 'Acme', sans-serif;
+    font-weight: lighter;
+  background: url("first.jpg") no-repeat center center/cover;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -164,16 +177,20 @@ padding: 4px;
 
 #right{
     background: url('z1.jpg') no-repeat center center/cover;
-    color: rgb(187, 185, 185);
+    color: rgb(241, 240, 240);
     font-size: 4rem;
-    
-    
-    
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid white;
 }
 
 #right p{
-    margin-top: 80px;
-    margin-left: 20px;
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
+  padding: 40px;
+  padding-right: 300px;
+    margin-top: 120px;
+    margin-left: 10px;
 }
 /* #left{
   border: 2px solid white;
@@ -195,6 +212,8 @@ padding: 4px;
   grid-column-end: 5;
 }
 .leftbutton{
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
   grid-column-start: 1;
   grid-column-end: 4;
   margin-top: 10px;
@@ -203,6 +222,8 @@ padding: 4px;
   margin-left: 120px;
 }
 .leftbutton input{
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
   border: 2px solid #d7910e;
   background-color: #d7910e;
   color: white;
@@ -228,19 +249,23 @@ padding: 4px;
  
 }
 .form-text{
+  
   margin-bottom: -40px;
 }
 .leftitem{
-  
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
   color: #d7910e;
   font-size: 1.4rem;
   display: grid;
   padding: 4px;
   /* border: 2px solid yellow; */
-  margin:2px
+  /* margin:2px */
 
 }
 input{
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
   height: 36px;
   outline: none;
 }
@@ -273,18 +298,12 @@ outline: none;
     /* background-color: rgb(16, 17, 21); */
   
     /* grid-template-columns: 4fr 4fr 4fr 4fr; */
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     padding: 4px;
-    height: 540px;
-    margin-top: 10px;
+    height: 520px;
     margin-bottom: 10px;
 }
-.box{
-    /* z-index: -1; */
 
-    border: 2px solid purple;
-    margin: 20px;
-}
 
 /* Google Fonts - Poppins */
 .slide-container{
@@ -294,6 +313,7 @@ outline: none;
    */
   /* background-color: rgb(16, 17, 21); */
   max-width: 4020px;
+  
   width: 1300px;
   padding: 40px 0;
   
@@ -305,12 +325,12 @@ outline: none;
 }
 .card{
   /* border-radius: 25px; */
-  margin-top: 10px;
+  margin-top: 40px;
   /* background-color: #FFF; */
 }
 .image-content,
 .card-content{
-height: 320px;
+ height: 320px;
   /* border: 2px solid green;
   background-color: yellow; */
   display: flex;
@@ -322,7 +342,7 @@ height: 320px;
 }
 .image-content{
   position: relative;
-  row-gap: 1px;
+  /* row-gap: 1px; */
   padding: 25px 0;
   
 
@@ -376,7 +396,7 @@ height: 320px;
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-  color: #4070F4;
+  color: #0c49f0;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
@@ -390,8 +410,8 @@ height: 320px;
 }
 .swiper-pagination-bullet{
   background-color: #6E93f7;
-  opacity: 1;
 }
+
 .swiper-pagination-bullet-active{
   background-color: #4070F4;
 }
